@@ -1,4 +1,4 @@
-Lesson 1 
+Lesson 1 Manage Windows Computers
 User accounts
 - Standard User
 - Admin User
@@ -78,9 +78,11 @@ Which of the following TWO authentication mechanisms are supported by Windows He
 What type of security software enforces rules for allowing or denying network connections?
 permissions
 
-Lesson 2
+Lesson 2 Manage Windows Apps
 Think of computer as 4 major subsystems: 
 1. the Central Processing Unit, or CPU
 2. Memory
 3. Storage
 4. Networking
+
+Lesson 3 Describe Network Protocols
