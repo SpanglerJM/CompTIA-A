@@ -86,3 +86,4 @@ Think of computer as 4 major subsystems:
 4. Networking
 
 Lesson 3 Describe Network Protocols
+will continue monday
