@@ -86,4 +86,33 @@ Think of computer as 4 major subsystems:
 4. Networking
 
 Lesson 3 Describe Network Protocols
-will continue monday
+Devices on the network, such as computers, printers, TVs, or phones, are known as nodes. You might also see them called hosts or clients, depending on the source of your documentation.
+
+Local Area Network, also known as a LAN
+There are two main types of LANs
+- Small office/home office, known as SOHO
+- Enterprise networks. 
+
+Wide Area Network, also known as a WAN
+
+Open Systems Interconnection or OSI Model
+7. Application 
+6. Presentation
+5. Session
+4. Transport
+3. Network
+2. Data Link
+1. Physical
+
+TCP/IP Model stands for Transmission Control Protocol/Internet Protocol
+4. Application
+3. Transport
+2. Iinternet
+1. Network Access
+
+network interface card, also called a NIC, that allows the devices on the network to talk to each other.
+
+The NIC has a 12-digit identifying code, known as a Media Access Control (MAC) address. 
+
+There are two versions of IP addresses—version 4 and version 6. Let’s look at IP version 4, or IPv4. An IPv4 address is 32 bits long.
+
