@@ -116,3 +116,12 @@ The NIC has a 12-digit identifying code, known as a Media Access Control (MAC) a
 
 There are two versions of IP addresses—version 4 and version 6. Let’s look at IP version 4, or IPv4. An IPv4 address is 32 bits long.
 
+Ethernet Frame Process
+First, after segmentation at the Transport Layer, the transport protocol adds a transport header to the segment.
+
+Second, the protocol at the Network Layer (in the OSI model) or the Internet Layer (in the TCP/IP model) adds the network header. Now the segment is called a packet.
+
+Then, the protocols at the Data Link Layer (in the OSI model) or the Network Access Layer (in the TCP/IP model) add the Ethernet header and trailer. At this point, the packet becomes known as a frame.
+
+Finally, the frame is then sent to the Physical Layer (in the OSI model; this is still the Network Access Layer in the TCP/IP Model) where it becomes bits. Those bits can then be transmitted across cables.
+
