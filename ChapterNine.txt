@@ -1,0 +1,41 @@
+Ultra slim models of laptops are designed with ssds but without optical drives called Netbooks - Chromebooks
+
+DESKTOP - monitor, keyboard, mouse, system unit.
+
+Input Methods
+    Touchscreens
+    On-Screen keyboard
+    Multi-Touch
+    TouchFLO -> HTC Sense
+
+Resistive Touch
+Projected Capacitive Touch 
+
+Secondary Storage is non-volitile (non permanent).
+
+Read the manual before disassembly.
+
+**Laptop Displays**
+Liquid Crystal Displays
+Light Emitting Diode
+Organic Light Emitting Diode
+
+Video Card - Generates and manages a digital image of the laptops data. Must be compatible with LCD panels. Detachable daughter-board
+
+Cold Cathode Fluorescent Lamp
+
+Digitizer converts analog rendering into digital representation.
+
+no upgrading laptop processors.
+ Laptop memory is same as DIMMS. DDR2,DDR3,DDR4.
+
+ Laptop Storage Devices
+ HDD - 2.5 or 1.8 form factors
+ SATA
+
+
+M.2 Form Factor
+B - SATA and PCIEx2
+M - PCIEx4
+
+NVME - non volatile memory express. installed into an M.2 slot on laptops. as hight as 3.5gbps. 
