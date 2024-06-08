@@ -180,3 +180,8 @@ Port Replicators
     deos not provide docking capability
     third-party vendor distribution
         not available through manufacturer of laptop
+
+Laptops use 1.8 form factor if internally using a Mictro SATA Connection
+
+storage types utilizes a NAND chipset mounted to the motherboard - NVMe Non-Volatile Memory express
+
