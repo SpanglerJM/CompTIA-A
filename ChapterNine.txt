@@ -39,3 +39,144 @@ B - SATA and PCIEx2
 M - PCIEx4
 
 NVME - non volatile memory express. installed into an M.2 slot on laptops. as hight as 3.5gbps. 
+
+Laptops internal expansion slot bus has no exertnal ports available - MINI PCIe 
+
+M.2 2mm vs 30mm
+
+Power Systems
+AC outlet 
+110v (USA)
+220c (adapter)
+
+DC Supply Circutry
+Operational Voltages
+
+Batteries
+Typically Designed as part of the case
+    proprietary component
+
+Common Batteries Used
+    Lithium ion 
+      A standart hard-shell, user replaceable battery
+
+    Lithium Polymer
+        used in thinner laptops
+        similar to Li-ion
+        Often sealed within the laptop 
+
+Other Internal Components
+    system fan
+    CPU Heatsink
+    Wireless NIC
+    CMOS battery
+    Flashing the BIOS
+
+Security and Privacy
+
+Physical Security
+
+Cable Locks - One way that you can help to physically secure your laptop.
+
+Biometrics - fingerprint, facial recognition
+
+Privacy Screens
+
+USB Dongles
+    Display port
+    Thunderbolt
+    HDMI
+
+USB Port Adapters
+    Keyboards, mice, other pointing Devices
+    Hard drives
+    Optical drives
+    Smart card readers
+
+Near Field Communication NFC
+    Emulation mode
+        Acts as a smartcard for payment transactions
+
+    Reader/writer mode
+        reads 8kb of data from tags
+
+    Peer-to-peer mode
+        exchanges data between NFC-enabled devices 
+
+    Operating specifications
+        RF transmission @ 13.56MHz
+        Transmission speeds (kbps) - 106,212,424
+
+Bluetooth
+    connect with (class 2) mobile accessories
+        e.g., headphones, earbuds
+        maximum distance between devices is 10m
+    Synchronize data between devices
+    requires pairing to establish connectivity
+
+Infrared
+    less common function for mobile devices
+        supported by samsung, htc, and Light
+        none for iphone
+    Normally used to transfer data between devices
+    line of sight connectivity with 30 degrees deviation
+        device must be no further than 1m apart
+
+Hotspots
+    internet access over cellular service
+        when not able to connectoto a wifi network, i.e., wireless access point (WAP)
+    service enabled on smartphones
+        incurs mobile data charges from service provider
+    provided from a dedicated device
+    laptop or tablet is tethered to the Hotspot
+        cable (legacy) or bluetoothe (preferred)
+
+    downsides to using smartphones as Hotspots
+        speeds
+            multiple devices compete
+        cost
+            akk devuces yse tge cell ohones data allocation
+        Security
+            newer phones provide WPA2 encryption
+            older phones are prone to brute-force attacks
+
+Mobile Device accessories
+    headsets
+    speakers
+    gamepads
+        game controller
+    bettery packs & chargers
+    protective covers & waterproofing
+    credit card readers
+    memory cards
+    card readers
+
+Input Accessories
+    Touch Pens 
+    Drawing Pads
+
+Android Peripherals
+    mouse
+    keyboard
+    usb on the go
+
+Docking Stations
+    Simplifies laptop mobility
+        when used as a desktop system
+        full-size keyboard, monitor and mouse
+    Disengage laptop from docking Stations
+        when user works remotely
+        peripherals remain connected to the Stations
+    Charges the laptop wile docked
+    additional devices may be connected
+        optical
+        eSATA
+        USB external drives
+        printer
+
+Port Replicators
+    duplicates on-board laptop ports
+        all ports located on sides and readers
+    deos not provide docking capability
+    third-party vendor distribution
+        not available through manufacturer of laptop
