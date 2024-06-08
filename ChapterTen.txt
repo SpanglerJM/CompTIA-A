@@ -1,0 +1,87 @@
+Understanding Mobile Connectivity
+3,4,5G
+
+3G 1998
+    Global System for Mobile Communications (GSM)
+        uses high speed packed access (HSPA+)
+    Code-Division Multiple access
+        usses evolution-data optimized technology (EV-DO)
+
+    Dependent on service provider
+    GSM -AT&T
+    CDMA - TMobile and Verizon
+
+    Varied data rates
+        200kbps to 7mbps download
+
+4G 2008
+    Uses IP conectivity instead of telephone circuits (3G)
+    Mobile broadband access
+        WiMax
+        Long-Term Evolution (LTE)
+
+    Vaied data rates for LTE due to cell tower height
+        300mbps down / 75mbps up theoretical
+        10-20mbps down / 3-10mbps up actual
+
+5G 2018
+    Classifications
+        Enhanced Mobile Broadband (eMBB)
+        Ultra-Reliable Low-Latency Communications (URLLC)
+        Massive Machine Type Communications (mMTC)
+
+    Varied data rates
+    20gbps down (theoretical)
+    1gbps down (actual)
+
+    600mhz to 6ghz range
+
+Airplane Mode - cuts off all emitters 
+
+Baseband OS
+    manages all wireless Communications
+    talks to the various manufacturers radio firmware
+    manages the radio frequency (RF) componentson behalf of the devicesprimary operating system 
+
+Real-Time OS's - SIM OS
+    subscriber identity module OS
+        manages all data transfers between the phone and SIM chip
+    stores account info, phone ID, and security data
+
+    SIM chips are carrier specific
+
+Product Relase Instruction provider
+    settings for configuration item so n the devise fo rhte current network
+
+Preferred Roaming List PRL
+    reference guide for the phone when Roaming
+Updating
+    normally wpdated with the primary OS
+    Some carriers allow you to dial a specific number
+
+
+Mobile Device Management MDM
+    Administrators manage through policies
+        track
+        lock
+        unlock
+        encrypt
+        wipe
+    Remotely manage software
+        install
+        delete
+        encrypt
+        wipe
+    Configuring Email Accounts
+        Mobile device and app Management
+        android and iOS email service support
+        integrated commercial provider
+            Google-gmail
+            Microsoft-outlook
+            apple-cloud
+    Corporate or ISP Baseed
+        enterpriseuser@corporation.com
+        spectrum-user@hawaii.rr.com 
+        hawaiian telcom - user@hawaiiantel.net 
+
+        
