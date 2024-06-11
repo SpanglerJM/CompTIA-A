@@ -1,0 +1,159 @@
+***** Chapter Eleven *****
+Troubleshooting Methodology and Resolving Core Hardware Problems
+
+Steps
+Identify the Problem
+Establish a Theory
+Test the Theory
+Establish a Plan of Action
+Verify Functionality
+Document Findings
+
+Main troubleshooting considerations
+    backup data before making any system change
+    prioritize reported issue
+        1st issuethat affect multiple users
+        2nd individual complaints
+    Elaborate on a written synopsis of the resolution
+        repair/recovery procedures applied
+        steps taken to resolve the issues
+
+1. Identify the Problem
+    Individual or collective Hardware
+    Operating System
+    Application or software program
+    end-user
+
+    Can you show me the problem?
+    How often does this happen?
+    Has any new hardware or software been installed recently
+    hos the computer been boved? has someone who mormally doesnt use the computer recendly used it?
+    have any other changes been made to the computer recently
+
+2. Establish a Theory
+    Reboot
+    Visually Inspect
+    Check for connections internal and external
+
+3. Test the Theory
+    will restarting the computer help?
+    are the cables pluggedi in?
+    is the system ready?
+    do the chips and cables need to be reseated
+    is the problem user error?
+
+4. Establish a Plan of Action
+    test reasons 
+    keep attempting to fix
+    new ideas or escelate
+    one solution at a Time
+
+5. Verify Functionality
+    confirmation of complete Functionality
+        upon resolution of the problem that was initially addressed
+        determine that the problem was resolved
+        personal acknowledgement from user
+        if possible, implement preventive measures
+        correct hazardous and fault-providing conditions 
+
+6. Document Findings
+    recorded information regarding 
+        findings and investigations of cause
+        actions and planned steps taken to correct the Problem
+        outcomes of the problems solbed or next issue.
+    use personal notes and record as you work
+    system based documetnation includes historical record of services performed on equipment, electronic knowledge base resource and company wide incident repository
+
+
+Outdated BIOS
+    unable to support new technologies
+    update by flashing the BIOS
+Loss of BIOS setup configuration
+    BIOS setup configuration stored in CMOS RAM
+    maintained by battery when PC is turned off, i.e. RAM is volatile storage
+    dead battery causes loss of configuration settings
+PC unable to boot, i.e., load the operating system
+    error message after ports
+Suspect BIOS setup configuration
+    Boot sequence
+        uses firt device lsited, typically a hard drive
+        may be set to boot from the optical drive
+            'no OS found' if non-bootable disc is inserted
+            'no boot device' if tray is empty
+
+POST 
+    BIOS executes the 'Power on Self-Test' program
+        when power is applied
+    Tests all critical syste hardware for basic Functionality
+        RAM
+        CPU 
+        Video
+        North Bridge
+        South Bridge 
+POST Routine Problems
+    beep codes 
+        when an issue si detected before video is tested
+        single - indicates no problems detected
+        multiple - indicator of problems detected
+        varies according to BIOS manufacturer/ version
+            specific duration and pattern relates to specific component
+POST Card - alternate method to determine problems
+    detected during the POST
+    installs to a PCIe or PCI slot, and USB port
+    displays numeric codes
+        represents a specific component checked during POST 
+
+##### Toubleshooting Problems with Motherboards, CPUs, RAM and Power #####
+Identifying Motherboard and CPU Problems
+    Complete system failure
+    sus;ect bad motherboard and/or CPU
+    include other possibilites like issue wiht memory (DIMM) or bad power supply (PSU)
+    locks up or 'hangs'
+    stuck in a reboot loop
+
+Motherboard problems
+    physical trauma - dropped or environmental effects
+    electrostatic discharge 
+        lack of preventive measures taken - grounding chords, and wrist straps, shielded packaging, bench manufacturers
+    short-circuiting - foreign or loose metallic parts/ screws
+        comes in contact with soldered leads of components
+CPU problems
+    seldom due to physical trauma
+    frequently caused from overheating
+    improper installation
+        fan and heatsing - cooling system
+        ineffectiven ess or absence of thermal compound
+        incorrect orientation onto socket - nothces or bevel alignment
+
+I/O Port and Cable Problems
+    failures may occur does to neglect when used
+        attempting to attach cable with dirty or damaged connectors
+    Isolate the cause of the problems
+        cables are connected properly
+        ports are enabled in the BIOS setup/ device manager in windows
+    Test your theories
+        check suspected bad ports using a loopback pluggedi
+        determine if the cable is bad by swapping it out with a known good one
+        may need to 'ohm-out' the wires bewtween connectors (multimeter)
+Black Screen
+    Symtom of no video output
+    Eliminate the obvious theories
+        monitors power cable properly connected to an AC outlet
+        monitor is turned on
+        video cable is properly connected to boththe video card port and the monitor jack 
+        if available, substitute the mnonitor with a known good one
+    Onboard video component
+        if bad, does not mean the mohterboard NEEDS replacing, install a video card in an expansion slot and substitute with a known good adapter
+    Video cable
+        swap out wiht aknown good cable 
+Capacitor Overview
+    Stores electricity on the motherboard - to be used by specific circuits at a particular Time
+    provides appropriate timed delivery of stred voltage by design, sent to applicable circuits when specific relays are endergized
+    Has vatied life expectancy - shortened when becoming distended
+    Swelling AKA distended Capacitor
+        bulding is the first sign  of bad motherboard symptoms
+        leak of electrolyte (reddish-brown) require immediate replacement
+    IT technicians not recommended to replace capacitors - not certified to repair electronic circuitry
+
+Identifying Memory Issues and Identifying Power Supply Problems
+symptoms

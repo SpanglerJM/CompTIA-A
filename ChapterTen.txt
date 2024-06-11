@@ -84,4 +84,19 @@ Mobile Device Management MDM
         spectrum-user@hawaii.rr.com 
         hawaiian telcom - user@hawaiiantel.net 
 
-        
+Email Configurateion
+
+ SMTP - port 25 to push or send mail out to addresses
+ POP3 & IMAP4 - TCP - ports 110,143 - delivered from sender
+
+ Microsoft 365 - files are not synced unless sharepoint added, cloud storage available. google workspace
+
+ Active Sync - protocol for MS Exchange Server for mobile devicesprimary
+    users access email, calenedar, contacts and tasks
+    admins can remote wipe , enforce passowrd policies and enable encryptiopn
+    iOS and Android can use ActiveSync
+
+Syncing Apple iOS Devices 
+MAC OS
+    installed by default
+    ios devices automatically synced
