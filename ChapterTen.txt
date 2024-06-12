@@ -100,3 +100,26 @@ Syncing Apple iOS Devices
 MAC OS
     installed by default
     ios devices automatically synced
+
+Physical Memory
+    isolating causes require extensive troubleshooting practices
+        record addresses indicated in error messages
+        reboot, and observe if error is repeated
+        compare addresses from various error messages 
+            if similar, problem may be due to physical RAM issue
+Virtual Memory - is on the hard drive
+    memory processes involving a paging file (pagefile.sys) on the hard disk drive
+        suppplements memory capacity installed on the motherboard
+    issues caused by inadequate RAM capacity and less than 10 percent free disk space
+Slow performance
+    task manager
+        processes tab displays usage of CPU, memory, disk access, and network traffic
+            demands placed on the CPU to include memory usage by all processes
+            disk access such as transfers between the paging file and memory
+        processes using huge amount of the resource may need to be stopped
+        displays used and free space on the hard disk
+        less than 10 percent of free space
+            disk cleanup frees up disk space by deleting unnecessary content
+            manually delete unneeded files
+            move user-created files
+            
