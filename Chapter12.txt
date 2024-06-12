@@ -1,0 +1,79 @@
+##### Chapter Twelve #####
+Identifying Problems wiht Hard Disk Systems
+    Symptom - slow performance or read/write failures
+    Causes - failing drive or lack of available space (-10%)
+    Fix - Optimize disk - perform disk refragmentation
+    Free Up Space - Relocate files & remove old applications to gain needed space
+
+    Symptom - Unable to boot the OS
+    Causes - BIOS unable to recognize the hard drive. Operating system cannot be found
+    Fix - Ensure BIOS properly detects hard drive - check and reseat connections
+        Boot into Windows recovery environment
+            use command line
+            execute the bootrec/fixmbr - rebuilds the master boot record
+            execute the bootrec/fixboot - rebuilds teh boot sector
+
+    S.elf
+    M.onitoring
+    A.nalysis and
+    R.eporting
+    T.echnology
+    
+    Determines drives funtionsal status
+    Indicates drives shortcomings
+        uses various metrics
+        difficult to interpret - due to lack of indudstry standards
+    Benefits manuafacturers more than end-users
+        Analysis detect design flaws
+        Product Improvement
+
+    Redundant Array of Independent Disks
+    RAID Issues
+    Isolating the cause is complicated
+        multiple drives used in the Array
+        integrated vs installed controllers
+        software RAID issues challenging to diagnose
+    Depends on RAID configuration used
+        hardware-based RAID
+        Windows Disk Management utility (software RAID)
+        Array affected, but data is not lost - fault-tolerant design
+
+    Identifying Optical Drive Issues
+    Physical drive Problems
+        power connections - eject the tray to confirm power is applied
+    Data cable is properly attached
+        SATA connector uses 'key' for proper attachment
+            IDE cable connection must be oriented with a pin 1 (colored stripe on edge)
+        Allows BIOS to detect installation of optical drive
+
+    Typical issues are realated to 'disc' media (logical)
+    Symptom - Unable to read data from disc
+    Causes - inappropirate media type inserted in drive. dirty disc surface
+    Fix - leverage backward-compatibility concepts - DVD to read CDs and Blu-Rays or CDs. clean discs using recommended solution.
+
+Troubleshooting Video Issues
+    Symptom - Booting into VGA mode
+        (VGA mode is the standard resolution of 640x480)
+    Causes - video card cannot support higher resolution setting. or video cards driver is not loading properly.
+    Fix - reset the video cards resolution to one it can handle
+        reinstall driver if booting to VGA mode persists
+        replace the video card if both attempts do not work.
+
+    Symptom - no image on the screen (desktop)
+    Causes - monitor is not working
+        probable video card malfunction after checking monitor
+    Fix - substitute know good monitor for the suspected bad one
+        reseat video card if switching monitors do not work
+        reinstall video cards driver if problem still exists
+        lastly, replae the video card because it is not working
+
+    Symptom - no image on the screen (laptops)
+    Causes - LCD is not working
+    Fix - Confirm power is applied to the laptop
+        toggle the display using the appropriate function key (reboot if persists)
+        if reboot does not display BIOS informtion, replace display
+        problem is a windows issue when:
+            BIOS information appears during reboot then LCD goes blank
+            boot into VGA mode to reset resolution or reinstall driver
+        replace display if al esle fails to correct problem 
+
