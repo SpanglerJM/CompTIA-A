@@ -77,3 +77,61 @@ Troubleshooting Video Issues
             boot into VGA mode to reset resolution or reinstall driver
         replace display if al esle fails to correct problem 
 
+Malware Removal Steps
+    Identifying symptoms
+    Quarantine system
+    Remediate system
+    Schedule scans and updates
+    Educate users
+
+Troubleshooting Printer Problems
+    Impact Printer Problems
+    Low print quality Causes
+        work-out ink ribbon - cartridge improperly installed or not replaced as needed
+        slipping ribbon advance gear
+        pin stuck insitde the print head
+        broken, loose or shourting print head cable
+        pin stuck in the out position (does not retract)
+        wrong driver installed
+        Bad PRintre Control Board (PCB)
+
+    Multiple sheets are picked up - worn seperator pad. paper sticking together
+
+    Power Problems
+    5&12 VDC voltages
+        transformed from 110-220 VAC input
+        for internal power circuits
+
+    Laser Printing Problems
+        Electrophotograohic (EP) imaging
+        most complex of printing processes
+            familiarity with the seven stages
+            facilitates identification of cause
+        Applicable fixed identified by specific symptoms
+        Periodic maintenence - prevents occurance of potentioal Problems
+
+        PRINTERS CANT EVEN DO THE FREAKING CLEANING
+        PROCESSING          
+        CHARGING
+        EXPOSING (WIRING)
+        DEVELOPING
+        TRANSFERRING
+        FUSING
+        CLEANING  
+    Power Problems
+    DC power supply +/- 5&12 VDC
+    Voltage Checks
+        if none present p replace fuse 
+        one or more(not all) - likely replace DCPS
+
+    No Network Connectivity
+        Possible sources of connectivity problem
+            patch cable
+            NIC port and wall jack (attachment of patch cable)
+        Confirm IP Address
+            Netowrked printers, not local-printers
+        Confirm DHCP settings
+            Networked printers have static IP addresses
+        
+    Nothing printers
+        
