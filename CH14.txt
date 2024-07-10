@@ -1,0 +1,36 @@
+Task Manager Overview
+    terminate unresponsive applications
+    ctrl-alt-del
+
+    ctrl-shift-escape
+
+    Processes - lets you see which taks are open on the machine.
+
+    Details - gives you more detail than the processes tab.
+
+    Priority - low, below normal, normal, above mormal. high, realtime.
+
+    Services - lists the name of each running sercice as well as the process ID associated with it and its description, status and group.
+
+    Performance - CPU usage %, a graphical display of CPU history, number of processes and graphical display of physical memory. 
+
+    Users - username, status, CPU usage, memory usage, disk usage, and network usage.
+
+    Startup - the list of names of services confitures to begin at startup, publisher status and start up.
+
+Microsoft Management Console (MMC)
+    a tool that allows you to create a custom console that contains the tools you need to manage your applications.
+
+    Computer Management - can manage all the services running on a computer in addition to device manager.
+
+     Task Scheduler -  allows for the schedulin g of taks using asimple command, script, or external program.
+
+     Even Viewer - a link to the tool that allows you to view application error logs, security audit records and system errors.
+
+     Shared Folders - allows you to manage all your computers shared folders.
+
+     Local Users and Groups -  allows you to create and manage local user and group accounts.
+
+     Preformance - show you how system hardware is performing. and alerts you if system performance goes under a threshold that youset.
+
+     Device Manger - allows you to manage hardware devices and perform tasks such as updating drivers, disabling devices and uninstalling devices.
