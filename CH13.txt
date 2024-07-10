@@ -76,3 +76,4 @@ Special Features of Windows
     BranchCache - caches files on local network to reduce network traffic.
 
     DirectAccess - allows users to connect to a remote network without a VPN.
+
