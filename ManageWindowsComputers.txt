@@ -1,0 +1,127 @@
+Lesson 1 Manage Windows Computers
+User accounts
+- Standard User
+- Admin User
+- Backup account
+- Install account
+- Guest account
+
+creates files and folders with that users permissions.
+
+GUI - Graphical User Interface
+Computer Management
+Performance Monitor
+Task Manager
+
+CLI - Command Line Interface
+CMD - Command Prompt
+ 
+Windows PowerShell /(Admin) - Administrator Version
+
+Update & Security Settings in Administrator Tools
+Windows Update - configure when and how updates are integrated
+Windows Security - verify anti-virus software on your system, firewall and network protection
+
+WITH PERMISSION you can do anything
+List folder contents: A user can see folders and file names but cannot open them or do anything else with them.
+
+Read: A user can view or copy a file or folder, or any information contained within a folder.
+
+Read and execute: In addition to all Read privileges, a user can also run any applications located within the folder.
+
+Write: In addition to all Read privileges, a user can also add files and subfolders.
+
+Modify: In addition to the Write privileges, a user can also modify or delete files and subfolders.
+
+Full control: A user has all of the above permissions as well as the ability to change permissions for all files and subfolders.
+
+
+
+
+QUIZ 1 #####
+Which TWO methods provide fast access to a range of management interfaces?
+ Right-click Start
+ Press START key and type feature name
+
+You need to configure a number of input and output settings for a user with a sensory disability. What search term can you use to open the relevant Settings app page quickly?
+ Ease of access
+
+Which feature assigns configuration rights and privileges to an account?
+ Groups
+
+Which technique demonstrated this lab is MOST applicable to completing configuration tasks in the field?
+ Use a checklist to verify completion
+
+ QUIZ 2 #####
+ As you try to change a configuration setting, the desktop is dimmed and a prompt is shown requesting an administrator's credentials. Which Windows feature is this?
+
+UAC
+Correct - if you are signed in as an administrator, you simply confirm a Yes/No prompt, but if signed in as a standard user you must enter admin credentials
+
+What type of software provides an interface between the operating system and hardware components?
+
+ Driver
+
+True or false? Remote Desktop is enabled or disabled for each user account.
+ False
+
+ QUIZ 3 #####
+ What feature MOST directly mitigates the risk that Windows operating system files will be vulnerable to malicious exploits?
+ Windows Update - the purpose of Windows Update is to promptly install patches for code that is known to be vulnerable to exploits
+
+Score: 1
+Which of the following TWO authentication mechanisms are supported by Windows Hello?
+
+ Facial recognition
+ Fingerprint recognition
+
+What type of security software enforces rules for allowing or denying network connections?
+permissions
+
+Lesson 2 Manage Windows Apps
+Think of computer as 4 major subsystems: 
+1. the Central Processing Unit, or CPU
+2. Memory
+3. Storage
+4. Networking
+
+Lesson 3 Describe Network Protocols
+Devices on the network, such as computers, printers, TVs, or phones, are known as nodes. You might also see them called hosts or clients, depending on the source of your documentation.
+
+Local Area Network, also known as a LAN
+There are two main types of LANs
+- Small office/home office, known as SOHO
+- Enterprise networks. 
+
+Wide Area Network, also known as a WAN
+
+Open Systems Interconnection or OSI Model
+7. Application 
+6. Presentation
+5. Session
+4. Transport
+3. Network
+2. Data Link
+1. Physical
+
+TCP/IP Model stands for Transmission Control Protocol/Internet Protocol
+4. Application
+3. Transport
+2. Iinternet
+1. Network Access
+
+network interface card, also called a NIC, that allows the devices on the network to talk to each other.
+
+The NIC has a 12-digit identifying code, known as a Media Access Control (MAC) address. 
+
+There are two versions of IP addresses—version 4 and version 6. Let’s look at IP version 4, or IPv4. An IPv4 address is 32 bits long.
+
+Ethernet Frame Process
+First, after segmentation at the Transport Layer, the transport protocol adds a transport header to the segment.
+
+Second, the protocol at the Network Layer (in the OSI model) or the Internet Layer (in the TCP/IP model) adds the network header. Now the segment is called a packet.
+
+Then, the protocols at the Data Link Layer (in the OSI model) or the Network Access Layer (in the TCP/IP model) add the Ethernet header and trailer. At this point, the packet becomes known as a frame.
+
+Finally, the frame is then sent to the Physical Layer (in the OSI model; this is still the Network Access Layer in the TCP/IP Model) where it becomes bits. Those bits can then be transmitted across cables.
+

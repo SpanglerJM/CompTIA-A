@@ -1,0 +1,37 @@
+Training gwants to install a network cable to run a television signal between two buildings. Which of the following cable types should it be? Coaxial (TV cable)
+
+You connected your laptop to a new wireless netowrk and receive an IP address automatically. Which of the following servers allowed this to occur? DNS servers
+
+Operating System Not Found error on display. boot.ini is configured properly. Whats up? An incompatable partition is is marked as active.
+
+What type of networking hardware is usecd to deliver broadband internet access using a hybrid fyber coaxial infrastructure? Cabel modem
+
+Try to print a test page but nothing prints out? You connected the printer to the guest wireless network instead of the corporate wireless network
+
+CATe Network Cable - RJ-45
+
+Expansion Card? PCIe x1
+
+Battery wont turn on and the battery wont charge? battery and adapter have been replaced? new DC jack
+
+The 5.0GHz frequency is less effective at penetrating solid surfaces than the 2.4GHz
+
+Odd debris displayedon the screen? clean artifacts on the protective glass
+
+A virtual machine 
+
+During the boot-up sequence, you do not hear any POST beep codes but the fans still spin normally? The power supply wattage is too low for the components in the computer
+
+Zigbee is for home autonomation
+
+Indicator lights is steady, MOST likely the issue? no network activity
+
+Perform a remote wipe of the device
+
+OS not found? Repair the GPT
+
+ST = Stick and Swist, the two cables or B
+
+###########################################################################################################
+Day Two 
+

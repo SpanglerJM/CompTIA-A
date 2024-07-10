@@ -1,0 +1,78 @@
+Operating System
+    communication between OS and hardware
+    manage discs/disks and files
+    access devices
+    manage memory
+    format the output
+
+    Applications
+        Software used to accomplish tasks
+            word processor, spreadsheet, email,
+        Compiled for particular OS version 32/64
+        Requests OS support for hardware access
+         shares code from OS
+         DLL files
+         reduces duplication of common code required for execution
+
+    Drivers
+        instructs OS how to access hardware
+        must be compatible with a particular version
+        peripherals - printers, scanners
+        I/O adapter cards, video, nic
+
+    Important Operatin System Terms
+    version - revision of software. support new technologies. 32 or 64.
+    source code - defines how the software functions. Open - modifications are allowed by anyone. Closed - only developer allowed to edit code.
+    shell - program that runs on top of the OS. provides additional features like desktop menus.
+    GUI - Displays objects (icons) used for navigation. supports mouse and touch screen input.
+    network - physical grouping of two or more connected computers. Locigal connection, sharing of information and resources. 
+    multitasking - preemptive versus cooperative (nonpreemptive); obsolete
+    multithreading - ability of the application to have multiple requests in to the procesor at one time.
+    ARM Advanced RISC Machine processors - use a 'reduced instruction set computing' instruction set commonly found on tablet and phone provessorys.
+
+Opeating System Life Cycle
+    Alpha - preview of operating systems first draft. common in open-source development. uncommon for corporate-based OS (proprietary software)
+    Beta -  patching discovered bugs in the second draft of OS. look for missing features/ new bugs. solocits administrators trial run participation to confirm corrective modifications were effective.
+    Release Candidate - RTM, corrective actions and testing completed. Administrators urged to install and use it to assist in developing enhancements to the OS.
+    Current - present-day relase of operating system. development of its future version. slated as one to two year concurrent process.
+    Service Pack - implement major revisions. milestone in operating systems life cycle inclused newor revised major features, security and functional patches.
+    mainstream support - hot fixes is immediate installation of critical patch. security updates seals discovered vulnerabliities. updated features, general maintenance. scheduled period support. developers timeline of programmed support. expiration of support.
+    Extended support - LTS long term support. limited support, critical security updates, no provision for hot fixes or feature updates.
+
+Minimum System Requirements
+    determine hardware compatibility
+
+    Task View
+    displays all open windows
+
+    Universal Windows Program
+    runs on all Windows 10 devices
+
+    Cortana
+    digital assistant for Windows, sux a lot
+
+    Spotlight
+    search feature displays. lock screen picture
+
+    Snap assist
+    snap windows to the side of the screen
+
+    Windows Hello
+    biometric authentication
+
+Special Features of Windows
+    Domain-joined - alow for centralized authentication, administration and auditing of user and computer accounts through Active Directory.
+
+    Group Policy - allows administrators to configure and manage computers and users in a domain environment.
+
+    Workgroups - computers that are not domain-joined. no centralized authentication, administration and auditing of user and computer.
+
+    AppLocker - restricts access to applications.
+
+    Remote desktop - allows users to connect to a remote computer and access its resources.
+
+    BitLocker - encrypts data on hard drive.
+
+    BranchCache - caches files on local network to reduce network traffic.
+
+    DirectAccess - allows users to connect to a remote network without a VPN.
