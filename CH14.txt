@@ -23,14 +23,72 @@ Microsoft Management Console (MMC)
 
     Computer Management - can manage all the services running on a computer in addition to device manager.
 
-     Task Scheduler -  allows for the schedulin g of taks using asimple command, script, or external program.
-
-     Even Viewer - a link to the tool that allows you to view application error logs, security audit records and system errors.
+     Event Viewer - a link to the tool that allows you to view application error logs, security audit records and system errors.
 
      Shared Folders - allows you to manage all your computers shared folders.
 
-     Local Users and Groups -  allows you to create and manage local user and group accounts.
+     Local Users and Groups -  allows you to create and manage local user and group accounts. 
 
-     Preformance - show you how system hardware is performing. and alerts you if system performance goes under a threshold that youset.
+     Preformance - show you how system hardware is performing. and alerts you if system performance goes under a threshold that you set.
 
      Device Manger - allows you to manage hardware devices and perform tasks such as updating drivers, disabling devices and uninstalling devices.
+
+    Disk Management - snap in is used to view disk in formation like volumes configured on the physical disk and the filesystems that are formatted on te volume.
+
+    Task Scheduler - allows you to configure an application to run automatically or at any regular interval.
+
+    Certificate Manager - is used to view and manage certificates used by the web browser and the operating system.
+
+    Group Policy Editor - allows you to edit the local Group Policy for the operating system.
+
+    System Configuration - determines how windows 10/11 starts up.
+        Normal - loads all drivers and services.
+        Diagnostic - Load basic devices and services.
+        Selective - check the box for options.
+
+    System Information - extensive list of settings used on the system. run 'msinfo32.exe 
+        Systam Summary
+        Hardware Resources
+        Components
+        Software Environment 
+
+    Resource Monitor - indicates how resources are being utilized. run resmon.exe 
+
+    Disc Cleanup - free up hard drive space. run 'cleanmgr.exe'
+
+    Control Panel - Windows + R
+    
+Applets
+    Internet Options Applet - brings up the Internet Properties dialogue box. Configure the browser environment for Internet Explorer 11 and specify sich things as the programs used to work with files found online.
+
+    File Explorer Applet - you can change the default opening pane for File Explorere. Has a quick access option.
+
+    System Applet - will open the Systems App to the About screen.
+        Network Identification
+
+        Device Manager - 
+
+        Hardware - tools to change how the hardware is used.
+        
+        User Profiles - info about the settings and preferences of a user.
+
+        Environmental Variables - User: settings for individual user only. System: set all users one the machine.
+
+        Startup and Recovery - what to do during system startup and hwat to do in case of unexpected system shutdown.
+
+        Performance - set the size of your virtual memory and how the syystem handles the allocation of processor time.
+
+    
+        System Protection - lets you enable/disable and configure the System Resore feature.
+
+        Remote - enable/disable Remote Assistance and Remote Desktop. RA permits people to access the system in response to requests issued by the local user using the Windows Remote Assistance tool. RD
+
+        Computer name - define in a workgroup or domain environment.
+
+        Advanced - 
+
+        User Accounts - allows you to view and create accounts for the windows operating system.
+
+        Power Options - allows you to choose a power plan of Balanced, Power Saver, or High Performance.
+
+    
