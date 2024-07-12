@@ -91,4 +91,76 @@ Applets
 
         Power Options - allows you to choose a power plan of Balanced, Power Saver, or High Performance.
 
+Windows settings
+
+    Time and Language - allows you to change settings related to the date and time shwon in windows 10/11.
+
+    Update and Security - all settings related to Windows upadtes and security.
+
+    Personalization - change display settings in the personalization screen.
+
+    Apps - replace the Program and Features Control Panel. Allows you to change the source of apps in relation to the microsoft store.
+
+    Privacy - allows you to control all your privacy concerns with windows 10/11.
+
+    System - allows you to change a multitude of settings that pertaint othe operating system.
+
+    Devices -  allows you to view, control an dconfigure all devices connecgted to the PC.
+
+    Network & Internet -  view and control network settings for windows as well as internet settings.
+
+    Gaming - congtrol how gaming is performed on windows 10/11.
+
+    Accounts - view and configure all the settings fo ryour user accounts as well as other accounts on the operating system.
+
+The Windows Registry
+    Centralized database that contains environmental settings for your programs. Also contains registration information to know what filename extensions are associated with which applications.
+
+    Registry Hives = REGEDIT
+        HKEY-CLASSSES_ROOT - includes information about which filename extensions map to particular applications
+
+        HKEY_CURRENT_USER - holds all configuration information specific to a particular user, such as their desktop settings and history information.
+
+        HKEY_LOCAL_MACHINE - includes nearly all configuration information about the actual computer hardware and software.
+
+        HKEY_USERS - includes information about all users who have logged into the system.
+        
+        HKEY_CURRENT_CONFIG - provides quick access to a number of commonly needed keys that are otherwise buried deep in the HKEY_LOCAL_MACHINE. 
+
+Disk Management filesystems
+    File Allocation Table - FAT for the file table used to keep track of where files are within the system.
+
+    Virtual FAT - an extension of FAT. 255 characters. Created 2 names for each file. new and old.
+
+    FAT32 - allows for 32-bit cluster addresssing, which provides for a maximum partition size of 2TB.
+
+    New Technology Filesystem - an advanced filesystem. Individual file security encryption and compression, disk quotas, and RAID support.
+
+    Compact Disc File System - filesystem of choice for CD media.
+
+    ExFAT - for flash drives where NTFS cannot be used because of overhead and FAT32 is not acceptable due to filesystem limitations.
+
+    Network File System - widely used in UNIX and Linux due to its journaling capabilities.
+
+    Extended File System - ext3 became the default system for many distributions of Linux due to  its journaling capabilities. Enhancements were added to create ext4, which is used with Android andother operating systems.
+
+    Hierarchial File System - filesystem developed by Apple for the Mac OS.
     
+    Apple File System - proprietary filesystem that was developed by Apple to replae HFS and HFS+.
+
+    Swap Partition - found only within Linux and UNIX installations are the equivalent of the page file (pagefile.sys) in windows, except that they are their own partition type. They are used fo rvirtual memory when the physical memory is exhausted.
+
+Three Partition Styles
+    Basic Disks - Master Boot Record (MBR) is the standard BIOS partitioin table used and predates GPT. MBR disk storage can have a maximum of four primary partitions or three primary partitions and one exteded partition containing multiple logical partitions, for a maximum of 26 logical partitions.
+
+    GPT Disks - GUID Partition Tables is the current partition table specification used with Unified Extensible Firmware Interface (UEFI) BIOS. GPT partition tables allocate 64-bit logical block addressing for larger partitionss, if you need to create partitions 2TB or larger, it is required. AGPT disk can containd up to 128 primary partitions.
+
+    Dynamic Disks -  Are proprietary to Windows OS. Can contain up to 2000 columes. All disks installe dinthe operating system contain an identical 1mb database that describes all the other disks installed. The true benefit of this 1mb database is moving fault-tolerant disks to another Windows operating system.
+
+    Features and Functions
+        Initializing Disks - allows the LDM (Logical Disk Management) to recognize the disk.
+        Mounting Partitions - once a volume is created, you need to make it available to the operating system for use.
+        Extending Partitions - if you ever fill up your drive and need a bigger one, extending partitions adds space to a virtual disk.
+        Shringking Parititons - when an installation is not using a fraction of the physical disk storage another partition is required. 
+        Adding Drives - hot swap without turning it off. when a disk is added to the operating system the OS eeds to know it.
+        Adding Arrays - arrays of disks are multiple disks working together for a specific purpose.
