@@ -164,3 +164,4 @@ Three Partition Styles
         Shringking Parititons - when an installation is not using a fraction of the physical disk storage another partition is required. 
         Adding Drives - hot swap without turning it off. when a disk is added to the operating system the OS eeds to know it.
         Adding Arrays - arrays of disks are multiple disks working together for a specific purpose.
+
