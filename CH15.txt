@@ -1,0 +1,45 @@
+Windows Administration
+    OOBE - Out Of Box Experience
+
+Command-Line-Tools
+
+    ipconfig - displays basic information. IP addresses, subnetmask, default gateways, and DNS suffix.
+
+    ping - allows you to verify network connectivity via Internet Control Message Protocol.
+
+    tracert -  allows you to verify the path a network packet travels to its destination.
+
+    pathping - works like tracert and ping. used to diagnose packet loss to a destitation website.
+
+    netstat -  allows you to view listening and established network connections for the operating system.
+
+    nslookup - resolution of a website to an IP address.
+
+    hostname - returnsw the hostname of the computer with command prompt open.
+
+    gpupdate - it refreshes or changes both logical and active directory based on policies.
+
+    gpresult - shows resultant set of policy report/values for a remote user and computer.
+
+    net - use - map drive letters to network shares.
+        - user - lists all the local accounts on a windows installation.
+    
+    shutdown - shcedule a shutdown locally or remotely.
+
+    SFC - System File Checker, checks and verifies versions of files.
+
+    winver - not an actual Command-Line-Tool. gives info about the computer.
+
+Disk Commands
+
+    format -  wipe data off disks and prepare for use.
+
+    copy - copies a file.
+
+    xcopy - copies folders as well as files.
+
+    robocopy - accepts plethora of specifications and keep NTFS. Copy files and theri attribues to include NTFS attributes.
+
+    diskpart - shows the partitions and lets you manage them on the computers hard drive.
+
+    chkdsk - create and display status reports for the hard disk scna and attempt to repair diesk errors.
