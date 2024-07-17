@@ -43,3 +43,7 @@ Disk Commands
     diskpart - shows the partitions and lets you manage them on the computers hard drive.
 
     chkdsk - create and display status reports for the hard disk scna and attempt to repair diesk errors.
+
+
+Networking in Windows
+    
