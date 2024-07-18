@@ -1,0 +1,26 @@
+Working with macOS and Linux
+
+    working copies - recently backed up data aka shakdow copies.
+
+    journaled file system - logs recent activity on file servers
+
+    server cash recovery - allows writing of unsaved data after recovery.
+
+    on-site storage - physcal location of media used for backups, facility performed backup.
+
+    stored media -  tape cartridges, discs and external drives.
+
+    security and environmental considerations - access is controlled but easily retrievable after a disaster. FIre moisture and pressure resistance ratings.
+
+    offsite storage - repository for copies of backup media. improves security during site disasters. off property.
+
+    scheduled disk maintenance - defragment hard disks - place file fragments in contiguous clusters.
+
+    patch management - typically security related.
+
+    Antivirus/antimalware updateds - open-source coded operating systems.
+    
+
+    File Voult - provides full-disk encryotion. 256-bit key.
+
+    
