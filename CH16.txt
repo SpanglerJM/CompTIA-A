@@ -23,4 +23,31 @@ Working with macOS and Linux
 
     File Voult - provides full-disk encryotion. 256-bit key.
 
-    
+    YUM - Yellowdog Update Management - is used to update and install packages for Red-Hat based Linux distrobutions.
+
+    iwconfig - wireless
+    ifconfig - wired
+
+    grep -
+
+    cp is copy and cp -ar copies entire directory. must declare source and destination directories.
+
+    u - user
+    g - group
+    o - others
+    a - allows
+    + - add
+    - - remove
+    = - assign
+    s - set user id
+    r - related
+    w - write 
+    x - execute
+
+    DIG - Domain Information Group
+
+    1065 1066 1068
+
+    su for user environmental
+
+    ip utility - linux and redhat
