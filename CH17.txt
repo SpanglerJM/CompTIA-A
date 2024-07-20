@@ -1,0 +1,155 @@
+Physical Security Concepts
+    Access Controle Vestibule - aka mantrap, helps to prevent nonauthorized users from tailgaiting. ACV is a small room that has two controlled doors. one door opens for you, let in, closed and then the next door opens. Prevents unauthorized access to secure areas.
+
+    Badge Reader - Identification badges used for proof of access. for entry to restricted areas. Creates and electronic audit.
+        Photo ID
+        Magnetic Strip or RFID
+    
+    Video Surveillance - backbone of physical security. fixed and pan-tilt-zoom. PTZ cameras used to scan a larger area, but an intruder could possibly elude fom being recorded
+    CCTV - closed circuit television. Coaxial Cable but limited to 100m segments.
+    Ethernet is most common on new installations, exceeds limitations of CCTV. Network Video Recorder (NVR) is a server function. Seperate LAN segment.
+
+    Motion Sensor
+        Sensor Types
+
+        Passive infrared tracks zones of infrared radiation signature. Affordable and most commonly used.
+
+        Microwave Detector is similar in appearance to PIR sensorys without a reflectife front panel. Costly an dsuscpetigle to external interference.
+
+        Vibrations sensors are seismic sensors. detect earth tremors. used in physial security.
+
+    Alarm System - illegal access, commonly used to detect breakins. 
+
+    door locks - tumbler and key. mechanical or electronical.
+
+    Concepts
+        Perimiter Security
+        Security Guards
+        Fences
+        Bollards
+        Motion sensors
+        Alarm System
+        Door locks
+        Equipment Locks
+
+    Security for staff, specifying who is aurthorized to access what. equipment used to process and store sensitive data.
+
+    Key fobs use RFID for close proximity.
+
+    RFID badges operate at a 125kHz. 
+
+Logical Security
+
+    Principle of least privilege - restricts users permissions. assign permissions appropriate for job roles. to enable users to complete their assigned tasks. Types of permission for least privilege, read only, write, list folder contents.
+
+    Access control lists - control network traffic and applications. uses condition-based actions (defauld action when a condidtion is not met). Default sction - deny traffic from accessing network resources.
+    
+    Multifactor authentication
+    Email
+    Hard and Soft Token
+    Voice Call
+    Authenticator Application
+
+    Authentication Factors
+    Something you know
+        Password or Pin
+            increase password strength with complexity
+
+    Mobile Device Management
+        Mobile workforce and telecommuting
+            job tasks performed abroad and from home
+        Routine use of mobile devices
+            laptops, tablets and smartphones
+                company issued or personally owned
+        Organizations network resources
+            remotely accessible over the internet
+                from the companys LAN or via cloud services.
+
+        Requires policies to govern their use.
+            when accessingnetwork resource remotely
+                specifically with personally owened devices
+        MDN Software
+            Dictates BYOD pollicy on specific issues
+                employee terminations, lost device, password use.
+                primarily to protect company data
+        Scaleable directory service for objects
+            includes printers, users, and computers
+        Uses LDAP (389) to look up objects
+            Lightweight Directory Access Protocol
+        Does not authenticate
+            uses kerberos to authenticate users
+        
+        Domain
+            Authentication throught domain access Token
+            Keys for various resource ACLs (locks)
+            Authentication agains AD domain
+                key issued to individual users
+                key issued from users group membership
+            User access of file secured with ACL
+                Access granted when token and credentials match
+
+        Ourganizational Units (OUs)
+            organizes objects into respective security groups. Allows set of policies be applied to objects.
+
+            GPO assigns those policies and we enforce those policies with GPupdate gpforce.
+
+    Malware
+        software written wtih malicious intent 
+        often referred to as various
+            distinct difference from Malware
+        Variety of malware forms
+            covert cryptomining
+            web search redirection
+            adware, spyware and ransomware
+
+    Ransomware
+        Form of extortion
+        Establishes control of a computers
+            hard drive encryption
+            manipulating user credentials
+        Relinquishes control in exchange for payment
+            hands over code to overide restrictions.
+        Cyrptolocker
+            world wide attacks on healthcare faciliteis
+            held patient records for ransomware
+            in exchange for bitcoin payment to third-party
+        Mitigation through compliance
+            Maintain updates of antimalware definitions
+            Install OS patches as they become available
+
+    Trojan
+        Disguises itself as a legitimate program
+        Included as part of an installation program
+            Creates a backdoor or replaces a valid program
+        Able to remain undetected for years
+            While compromising security measures
+        Port scan may detect its existence
+            unsupported TCP or UDP port opened by an application can be determined
+        Best preventive emeasure
+            perform backups
+            before and after installing new software or OS
+            Reinstall original version of program 
+                if suspect presence of Trojan horse after the installation of programs updated version
+        
+        Keyloggers
+            Software used to record keystrokes
+                Initially used as a learning tool
+                Presently misused to attain credentials and Principle
+                Programmed to send collected information
+                To a remote host
+            Uncommon hardware variation
+                dongle situated between keyboard and PC
+                Collected data manually transferred from dongle
+        
+        Rootkits
+            Robust type of malware
+                permanently acquires admin-level rights
+                Infects the root of the operating System
+            Hides its presence
+                manipulating function calls to the OS and filtering information normally viewed
+                network connections undetected by Netstat
+                masks its own execution of processes
+                not indicated on Task Manager
+            Targetedsystems
+                non-compliant systems
+                antivitus and antispyware definitions out-of-date
