@@ -153,3 +153,99 @@ Logical Security
             Targetedsystems
                 non-compliant systems
                 antivitus and antispyware definitions out-of-date
+
+    Types of Viruses
+        Armoured - designed to make itself difficult to detect or analyze.
+
+        Boot Sector - infects the Master Boot Record of a hard disk. It loads when the computer boots and can re-infect an operating system.
+
+        Companion - attatches itself to legitimate programs and then creates a program within a different filename extension.
+
+        Macro - exploits the enhancements made to many application programs.
+
+        Multipartite - attacks in many ways. It may attempt to infect your boot sector, infefct all your executable files and destroy your application files.
+
+        Phage - alters programs and databases, the only way to remove this virus is to reinstall the programs that are infected.
+
+        Polymorphic Virus - chang form to avoid detection. They attack your system, display a message on your computer and delete files on your system.
+
+        Retrovirus - bypasses the antivirus software installed on a computer. Anti-antivirus.
+
+        Stealth Virus - attemps to avoid detection by masking itself from applications. It may attach itself to teh boot sector of a hard drive.
+
+    Botnet - lies dormant and awaits a command from a command-and-control server.
+    Worms - can reproduce itself, self-contained, and doesnt need a host application to be transported.
+
+    Windows Recovery Mode - provides multiple functionality. Recover system from a security threat.
+    Most useful function is Reset This PC - it refreshes entire system keeping data files intact. Or starting over which reinstalls the operating system.
+
+    End-User Education - deemed the best in security.
+
+    Software Firewalls
+        an operating systems protective function.
+            prevents malicious intrusion from the internet
+            Windows Defender Firewalls
+                Default settings
+                    Block all inbound traffic to prevent unknown software from infecting a network
+                    Allow outbound traffic - users are expected to comply with compnay policy.
+        Advanced Security Settings
+            for more detailed settings exceptions tothe 'block all incoming' rule.
+
+    Social Engineering
+        Process of acquiring information of a network infrastructure to gain access. Attain private information (business or personal). User credentials, PII, PHI, credit-card number.
+        Vatious social engineering tactics
+        primarily based on exploiting someones trust. Phishing, shoulder surfing, tailgating and impersonation.
+        Dumpster diving
+        Evil  twin on wireless - intercept traffic, rerout it, push them to bad sites.
+
+        phishing - attempt to attain information using email. Try to trick you into clicking on the link.
+
+        whaling for higher level employees, executives, presidents, CEO, COO, CFO.
+
+        Spear fishsing - exploit relationships though inmersonation
+
+        Shoulder Surfing - observing someone enter private information like login, password pins. bank info, credit cards,
+
+        Tailgating - entry security measures easily bypassed. exploiting someones curteous behavior.
+
+        Dumpster Diving - sifting throug trash bisn and receptacles, looking to find written and printed info.
+
+        Evil Twin - phishing attack over wifi. spoofing an organizations wireless network. Spoofed SSID seems similar at a glance - radiates a stronger signal than the ligit SSID. Places evil twin SSID at top of available wifi list.
+
+        Mitigation techniques - shoulder surfing. awareness of the surrounding area. Ensure unknown persons view is obstructed as access information is being entered.
+
+    Denial of Service
+        launched to disrupt company services (recieved and delivered)
+        overload servers with false requests - unable to satisfy valid client requests.
+        
+    
+    DoS Types   
+            Reflective - indirect attack from a third-party server. Unintentionally executed. Threat agent exploits a third party server, sends packets to server with victims IP address, server responds back to victim, sends unrequested data tothe targeted computer. ICMP-based smurf attack. targets resources like CPU and memory are consumed. Internet Control Message Protocol.
+            
+            Amplififed - Variation of the reflective DoS attack. Targeted computer is flooded with responses. Exploited servers like DNS, multiple queries produces parrage of responses. NTP Network Time Protocol. Pool of servers available on the internet. Single host query produces multiple responses.
+            
+            Distributed -  Reflective and amplified combined. Most commonly launched Dos attacks. From multible netbots, possibly millions of hosts controlled remotely. Difficult to isolate sources of Dos attacks.
+            
+            Zero-Day Attacks -  as software vulnerabilities are discovered by its developer doe to issues reported by users. And patches are not readily available, typical turn-around is 1-2 days. Only option to ward offf an imminent attack turn off the associated services and isolating the affected systems.
+
+            Spoofing Attacks -  posign as something or someone else. mask threat incidencts as normal occurrences (valid data packet exchanges). Current spoofing methods are IP, ARP (adress resolution protocol), DNS.
+
+            IP Spoofing - usiong the IP address of another computer. Appesrs data is being sent from a trusted source. Threat agents data packets appear light, intention of spoofing attempt. Exploit recieving users data processing routine. Infect systems, eventually the entire network. Prompt users to disclose sensitive information.
+
+            ARP Spoofing - IP address to MAV address resolution. LAN hosts communicatie via MAC address. Threat agent communicates unnoticably, using vvictims MAC address, aka ARP poisoning instead of its own MAC address. Able to negotiate security settings. ACL rules, firewalls default 'deny all'
+
+            DNS Spoofing - Domain name is forged. DNS server stores false record of web location. Redirects users intended destination. DNS Poisoning.
+            
+            On-Path Attack - Placement of device to listen in on communication between clients or clients and servers. Wireless netowrks are prone to 'war-driving' or use of an evil twin (rogue) router. Actively intercepts data to obtain vital information. Then allows traffic to continue on to its destination. Information gathered for later use. To gain network access remotely and attain more info.
+
+            Password attacks - use of password crackers to gain access. repetitive attemtps usiong systematic approach. Brute force is repeated attempts to guess password, change pattern of characters untill successful. Dictionary guesses password using loist of common words, may be autonomated with vast availabilty of tools. Rainbow Tables - database containing hashed values of passwords when stored inthe operating system. Passwords can be found using rainbow tables, hashes are traced bakc to the original password that created a specific hash. Hybrid is brute force and dictionary combined attack.
+
+            Insider Threat - internal organization incedent. Perpeduated by a disgruntled employee. Pilfers and discloses or sells company data. Considered a major crime as industrial espionage. Basis for corrective measures. Connection of unauthorized WAP. Unaware of compliance policy restriction. 
+
+            SQL Injections Structured Query Language - targets SQL database, intent is to disrupt the service. Other malicious reason may be to steal data. Modified a valid URL with SQL escape codes. When entered on a browser as demonstrated 'DROP TABLE USERS' deletes teh users table, databaserunable to satisfy subsequent queries. Mediation - implement input validation guidance, screen tips appear as user clicks on data field. Reminds data-entry specialist to make valid entries. Referred to as sanitization.
+
+            Cross-Site Scripting (XSS) - malicous script delivery methods. placing teh script on popular webpages. executes as the webpage loads onto users screen. Displays prompts  to phish visitors sensitive info. Also a lure device users to install malware. Browser security restrics direct access to the OS. 
+
+    
+    Exploits and Vulerabilites 
+        Both are common ways to compromise systems.
