@@ -249,3 +249,86 @@ Logical Security
     
     Exploits and Vulerabilites 
         Both are common ways to compromise systems.
+
+        Differences
+            Vulnerability is a security weakness (operating system may contain backdoors)
+            Exploits are the means and techniques used to leverage a systems weakness using scripts, code, applications.
+
+        Non-Compliant Systems 
+            Systemsnot kept updated, unhardened OSs are prime targets of exploits, protective software unable to detect anonalies
+            Uninstalled updates create vulnerabilities (unpatched holes or backdoors)
+            Maintaining comliant systems with MECM. Microsoft Endpoint Configuration Manager. Establishes a systems baseline ,updated state. Monitors all OSs and compares them to the baseline. Remediates those systems that fall out of compliance.
+            Third-party tools available, maintain compliance of third party applications.
+
+        Patching and updates
+            New installations fo operating systems. Not fully protected from malicious activity. Require complete update with available patches. Remediates recently discovered vulnerabilities upon being released to the market.
+            Nesw Features may be included with major updates.
+            Same for inital installation of applications. Updates may address compatibility issues. Vendors may include vulnerability patches.
+            Network devices - update and patch before being placed into service.
+            Maintenance - cyclic release of patches and updates. addresses security concerns. May improve functionality. Out of band patches distributed outside of normal releace sycles. to remediate critical vulnerabilities discovered.
+            Distribution methods SOHO and consumer systems, Windows Update in the Settings App utility. Large business and corporate network, Windows Server Udate Services WSUS. Central administration of patches and updates. Provide administrators with compliance status report.
+
+    
+    Operating Systems Life Cyrptolocker
+        Stages of use and Support - Upon release tothe market.
+        End of Life  - cyclic updates and security patches, no longer supported by the vendor.
+        Sustained support reccomendation - upgrade to currently supported version of OS. 
+
+    Unprotected Systems
+        Prone to infections and intrusion without antivirus and antimalware installed. Firewall disabled or misconfigured.
+        Antivirus and antimalware software - prevents various system or performance issues. Restricts remote access.
+        Firewall prohibit unauthorized connectivity.
+
+    BYOD
+        Organizational challenge to manage. Employes use personal devices to accomplish job-related tasks.
+        Risks involving security of data
+            Leakage - lose control of data. Device is misplace, stolen or hacked. Full device encryption mitigates this risk. Legal ramifications may emerge.
+            Probabliity
+            Data Portability - organizational data remains on personal device. When and employee is terminated or has l=resigned
+
+        Line of Business (LOB) Application. Only displays data, does not store data on device. wipes all saved business data from device.
+
+
+     Security Best Practices
+        Data encryption - Prevents loss of controll of data. Bitlocker feature.
+        Setting Strong Passwords - efffective and sage system measures. Educate and encourage
+        Requiring Passwords - windows regects non-password access by default on networks, allows local access with Sign in button.
+        Password Expiration - considered one-facrtoer authentication. Something you know can be compromised through shoulder surfing. chagne regularly.
+        End-User Best Practices - Locking Screens, Logging off, Securing Equip/Info.
+        Account Management
+            Restricting user permissions - Assign bare minimum of permissions. Implement group permissions.
+            Setting time restrictions - controls when users are allowed to login.
+            Limiting number of failed login attempts - set in Account Lockout Policy. 3 is optimal, 5 allows time for users to remember.
+            Changing default usernames - default administrator names are common knowledge like admin, root, or sysadmin.
+            Disabling the guest account - targeted vulnerability when not enabled.
+            Requiring Screen saver passwords - best practice for end-users. enforced through Group Policy. Prevents insider threat.
+        Disable Autorun - inserting or attatching media of unknown content. Optical disks, CD,DVD, Blu-ray, USB flash drives thumb or extertnal drives. Autorun.inf 
+        AutoPlay - automtic action or what should be done options. Enabled by default in Windows. 
+
+    Destruction and Disposal Methods
+        Recycling or Repurposing Best Practices
+            Policy to destroy data prior to Disposal
+            Guidelines for disposal of storage media
+                Hard Disk Drives
+                Optical Drives
+                Backup Tapes
+                Solid-State Devices
+
+            Hard drive sanitization and sanitization methods
+                Businesses storage of sensitive data. Encryption is a vital measure of data security. Storage devices must be sanitized.
+                Sanitization of storage media - low level formatting of PATA disks (IDE hdd). scrubs data from SSD. Vendor SSD sanitization may not conform to military or GSA specigfications.
+                OVERWRITE - utility which layers new data over existing data. writing and saving 0s. Several passes to hinder retrieval of old files. DBAN utility, uses boot media to bypass normal bootup load.
+                Drive Wipe - for repurposing of storage media. devices does not contain sensitive proprietary data.
+
+            Standard Format - a function of the OS. makes existing hard disk space available. existing files will be removed.
+
+            Low-level Format - during manufacturing process. third party utilities may be used. will wipe desks clean.
+
+
+        Physical Destruction - supplement to sanitation procedures. When uncertain if all content was removed.
+            Hard Disk Shredders - procured for commercial service ($20k). Provides certificate of destruction as legal verification.
+            Drill and Hammer - drill holes in disks. Deform drive enclosures, demolish controllers.
+            Degaussing with an electromagnet - metallic hard disks are magnetic media. data is written adn read as magnetic flux. use of a strong magnetic field. initiates the surface of hard disks. A variation of disk wiping.
+            Incineration - fire destruction considerations. implement all safety precautions.
+            Certificate of Destruction - verify destruction of devices for auditing.
+            Securing physical documents - may contain sensitive information.Prone to unauthorized disclosure (dumpster diving). Shredding best practice for prevention.
