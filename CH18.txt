@@ -1,0 +1,316 @@
+Securing Operating Systems
+    Users and Groups
+        Microsoft vs Local Accounts
+            Microsof account - recommended for sign-in. Best for personal work on a home computer. Created during inital setup. Of a new Windows PC or installation of Windows. Use an email address, phone number or skype. Benefits are * Setup the OneDrive feature to store backups * Setting syncronization across all installed or attatched drives. Use of Microsoft Productivity tools. Microsoft store app ecosystem transactions.
+            Local Account - for organizational use. Considered an off-line account (Windows operating system account). End users credentials are managed by the network administrator and grants access to network resources.
+            Corporate email address - MDM software enrollment. Selected employees authorized to use personal devices. Under companys 'bring your own device" (BYOD) policy.
+            Administrator account - there must be at least one local admin account. On every windows computer.
+
+        Administrator
+            Granted full control of operating system. Make minor changes up to uninstalling the Os. Member of the Administrators group. Sign in to standard user acocount for routine tasks and elevaet privileges when required to perform administrative tasks.
+
+        Power Users
+            Microsofts inital intent in Windows XP
+            Junior administrators with limited admin rights. Manage files, install programs, change permissioins.
+            Cant take ownership of files, change key OS files.
+            Concept unfeasible with Visa, Windows 7,8/8.1 & 10.
+            Only provides standrd user privileges
+            Backward compatible with XP only.
+        
+        Guest
+            Builst-in, with same rights as standart user.
+            Allows temporary use of a computer. No Access to log files.
+            Should remain disabled (default) if not used.
+
+        Standard Users
+            Member of the local Users group.
+            Assigns read and write permissions.
+            Allowed to use most installed applications.
+            Cannot make major system changes.
+            Specifically system-wide modifications to registry.
+            Run program as adjihistrator, respond to UAC.
+            If tasked to perform admninistrative task.
+
+        Changing between account types
+            Administrator privileges required to change from standard user to admin user
+            Performed in the Control Panel
+                User Accounts Applet
+                    "Change Your Account" to standard user removes you from adminstrators group
+                    "Manage Another Account" to add a user to another group
+
+    Working With Windows OS Security Settings
+        NTFS vs Share permissions
+            NTFS - Affect entire file ssytem. Provide granular access control (individual files, folders & volumes). Protect files accessed by local users.
+                Full control
+                Modify
+                Read & Execute
+                List Folder Contentes
+                Read
+                write
+            Share - Apply to network access of files or folders. Less granular than NTFS. Effective protection from remote users.
+                Full Control
+                Change
+                Read
+
+        Shared Files and Folders
+        System Files and Folders
+        User Authentification
+        BitLocker
+        EFS
+
+    Allow - Enable use of a permission. Overruled by a conflicting Deny
+
+    Deny - Disable use of a permission or multiple permissions. Blocks user access altogether.
+
+    Effective permissions
+        File Share access - incorporates share and NTFS permissions to determine overall permission for the share.
+
+        Rule of Thumb
+            Users with multiple group memebership.
+            Involves multiple varying permissions
+            The most permissive of both Groups
+            Determines most restrictive as teh effective.
+
+    Moving vs Copying
+        MOVE - same content moved. nothing new created. Retains permissions. NTFS permissions, loses all permissions when moved FAT32, adds new permissions when moved from FAT32.
+
+        COPY - new content created. original permissions lost. assumes permissions of the destination folder.
+
+    Attributes
+        Propeties of files and folders.
+        Basic properties introduced in FAT - Read only, hidden, archive & system.
+        Set (+) to enable Attributes
+        Set (-) to enable or remove attributes.
+        Currently used in NTFS. FAT used for backward compatibility.
+
+    File and Folder Attributes
+        Early FAT32 file Systems.
+            Read-Only - prevents overwriting and deleting files.
+            Hidden - hides files or folders to restrict access.
+            System - critical operating system files.
+            Archive - "marks files" that have changed after last backup. Backup software selects only files with their archive attribute turned on.
+        
+        NTFS
+            Indexing - catalogs files for improved searches.
+            Compresson - automatically compresses files and folders. Option to complress only new files and folders. Cannot be used along with encryption.
+            Encryption - encodes plain text for security. Cannot be used along with compression.
+
+        Standard Sharing
+            Set with 'Give access to'....'Select people'.
+            Choice with whom to share file or folder
+                along with persons respective permissions.
+            Procision of shared file or folder
+                every group has full control permissions.
+            Advanced Sharing 
+                Properties dialog box of file or folder
+                Allows granular setting of the share permissions assiciated with administrative-level access.
+                NTFS security permissions
+                    set from the security tab.
+                Additional Options
+                    add other share names tothe same location
+                    limit number of simultaneous connections, add comments
+
+    Administrative Shares vs Local Shares
+        Administrative shares - for administrators only.
+        Local Shares - accessible by standard users. may restrict access to users on seperarte segments (finance, HR).
+
+        Administrative Shares
+            Server-configured for admin use only. Restricts standard users from accessing contnet.
+            $ indicates hiddden resource.
+
+            Volumes - C$, D$
+            System root - admin$
+            Print drivers - print$
+
+        Local Shares
+            Created on indivicual local hosts. No administrative restrictions. Share indicator is a hand beneath shared item.
+
+        Network Shares
+            Mapped resources accessible from hosts desktop as if they are local.
+            NET USE M:\\server-name\share-name - can also map drives in Disk Management.
+            Printer shareing required to allow mapping of printers for newtwork access.
+
+        Permissinon Inheritance vs Propagation
+            Inheritance 
+                Default throughouht permisson structure unless a specific setting overrides it.
+                Permission removal cannot be accomplished unless inheritance is disabled.
+            
+            Disabled Inheritance
+                Changes NTFS security Settings
+                Prompted Options keep existing permissions - select the Convert Inherited Permissions to Explicit permissions on this object opetion.
+                Start fresh from where no permissions are set - select the Remove All Permissions from this Object option.
+                Start fresh from no permissions set - select the Remove All Permissions from this Object. Adverse effect of the selection above. Permission are also removed frm files stored within subfolders.
+                To endsure propogation of inheritance/permissions - select Replace All Child Object Permission Entries with Inheritable Permission Entries from this Object.
+            
+            Files required for OS funciotnality
+            Hidden attribute set by default
+                must not be hidden/ prevents tampering by standard users.
+
+
+        Local User Accounts
+            Authenticates uset against the operating system though OS's security account manager same
+            Allows access to local PC's resources granted with a local access token upon valid log-in.
+
+        Active Directory
+            Reduces administrative management tasks, facilitates user logon process for network access
+            Valid logon grants access to domain resources through a Kerberos token aka, Global Unique ID GUID.
+
+        Single Sign On
+            Facilitates access to mulitple resources, servers and applications.
+            Typically used with cloud-based services.
+            Authentication process produces a claim. Claim contains AD attributes about user, sent to resources insterad of users credentials. resources trusts AD information is valis and grants user access.
+            Privilege of use is carefully delegated.
+
+    Administrator vs Standard User
+        Authentication scheme
+            Users access granted through least privilege unless escaleted privileges are required.
+        User Account Control
+            Prompts for administrative credentials, when system recognizes reconfiguratiohn attempt.
+            Prevents unauthorized system changes.
+
+    Windows Defender/Defender Firewall
+    
+    BitLocker Overview
+        Purpose
+            Encrypts entire drive - protects startup and login files against malifcious intrusion.
+
+            Windows applicability - 10-Pro-Enterprise-Education. 8-Pro-Enterprise & 7 Enterprise-Ulitmate
+
+            Trusted Platform Module - secures encryption key instead of placing it on the hard disk drive. Motherboard chip enhances use of BitLocker. Not required to use BitLocker. Stores BitLocker key insteadof on encrypted drive. Prevents out of band instrusion when removed and installed in another PC.
+
+            Tamper resistant - senses attempts to crack encryption key, triggers reentry of recovery key.
+
+            BitLocker-to-Go
+                Encyrpts removable-media (external) devices.
+                Same encryption technology for internal PC driives.
+                Enable encryption to lock device when an external device is attatched.
+                BitLocker Drive Encryption in Control Panel
+                Unlock to access encrypted device, OS prompts for password used to decrypt device.
+                
+            Encrypting File System
+                Allows encryption of single files or folders on an NTFS volume. Folder will appear green in the local drive tree.
+                Certificate (key-pair) generation - local encryption. Operating system creates certificate. AD domain with CA (certificate of authority creates certificate).
+                All users can encrypt files and folders - simultaneous  use with BitLocker, increases data security.
+
+       Securing a SOHO Wireless Network
+        Change default usernames and passwords
+        Service-Set Identifier (SSID)
+            Change the default, typically the model of the router.
+            Disable the SSID Broadcast
+        Setting Encryption
+            Open is very unsecure
+            WEP, WPA, WPA2, WPA3 provides security
+            WPA3 uses CCMP-AES for strongest encryption
+        Enable MAC filtering
+            disabled by Default
+            turn off DHCP
+            reserve IP address for printers
+        Antenna and Access Point Placement
+            Layout of WlAN determines signal strength
+                longer distances result in more signal attenuation.
+                walls also absor RF signals
+            Avoid overextending wireless signal
+                prevents unauthorized access of WlAN
+            Perform wireless surveys
+                for optimum signal strength according to layout.
+            Radio power levels
+                adjust to retain adequate signal strength
+                    recieved by all wireless clients
+                    not extended beyond surveyed limits
+                        prevents signal reception by other wireless devices
+            Layout of WlAN
+                should provide adequate coverate of power level.
+            Reduce signal strength
+                maintain connectivity throughout network
+                prevent discovery by 'war driving'
+            Consider eliminating wireless access to the location
+
+        Assign static IP addresses
+            disabling DHCP
+            make it difficult for others to connect to the WLAN.
+            IP address, subnet mask, default gateway and DNS server information - manually entered in IPv4 properties.
+
+        WPS
+            wifi protected setup
+            simplified wireless configuration tools
+            requires 2 devices to press button at the same time or 
+            enter a PIN number instead of a password.
+
+        Securing a SOHO Wired Network
+            Change default Usernames and Passwords 
+                After Installing new network device (routers/switches)
+                Windows Guest Account - purposely disabled by default. High security risk when enabled for use. Create new account withguest membership (for use by hotel guests).
+
+            Enable MAC filtering
+                Limit access to network to devices withknown MAC addresses. Filter out all others
+                Feature of most routers allow lsited MAC addresses/ deny MAC addresses listed.
+
+            Assign Static IP addresses
+                Avoid using DHCP service to assign addresses. Disable DHCP function on router or server. Prevents assignmetn of address to unauthorized device placed on the network.
+                Increases administrative taks entering static address on each host in the NICsproperties dialog box.
+
+            Disabling ports 
+                Those not in use on network devices. Switch - prevents on-path attack
+                Those easily accessible. Hosts - prevents unauthorized data retrieval (attachment of external storage devices).
+
+            Physical Security
+                Common cause of risk to data security. Leaving computer unatended while still signed in to user account
+                Security features of Windows 10. NTFS. ACLs track security and assign acess type. Assigns appropriate user and group permisisons. Encrypts files stored on disk.
+                Securing physical devices - prevents theft of laptops in public venues. Use a cable lock to secure it to an immovable object. Add a lock to the access-panel of desktop. Secure routers and switches in locked cabinets.
+
+            Basic Security Principles
+                Firewall Settings
+                    Tweak defaults as needed. Persistent monitoring to refine security.
+                Screened Subnet (DMZ) - separate segmetn wiht accessable hosts
+                Port Forwarding - port mapping
+                    configure in.out-bound traffic through individurally designated ports.
+                Content filtering on domain networks.
+                    Granular level of denying access to networks, site types, named sites.
+                Parental Controls - used on home computers. Windows 10 Family Options.
+                Update Firmware
+                    ususlly designed to update automatically
+                    patch vulnerabilities discovered after marketed (compatable with new tech)
+                    various hardware associated with computers - wireless routers, graphic cards, hard drives.
+                Manually upadate if not automatically 
+                    download from manufacturers website.
+
+        Moile Device Security
+            Screen Locks
+                Restricts access to owner of device
+                Disabled by default
+                Lock types - Biometric, password.
+
+            Remote Wipes and Locator Applications 
+                Locate lost devices. Apple - Find My iPhone. Android - Find my Decice
+                Feature must be enabled & phone turned on to pinpoint devices location.
+                Wipes all data from a stolen or lost device and prevents manipulation of private information.
+
+            Remote Backup
+                iOS - data backed up automatically - syncronization to computer using iTunes or iCloud account.
+                Android - synchronizes data using third party app between google drive and phone/ tablet.
+
+            Failed Login Attempts restrictions
+                Supplemental security settings - automatic device wipe or factory Reset
+                Recommended only for business devices where backups are performed routinely.
+                Similar concepts on iOS. Disable the Erase Data feature. If correct unlock code cannot be remembered connect to computer.
+                Similar concepts on Android. Reverts to factory setting after 10 tries. If it fails use the PC to log into account and set up device.
+
+            Viruses and Malware on Mobile Devices
+                Prone to malware and virus infections despite computers being the main focus of attacks.
+                Malware affects - spam ads, expose PII, and remotely control device.
+                Virus affects - exploit email to replicate to other devices.
+                Antivirus and anti-malware are important requirements.
+                Trusted sources - Google Play Store/App Store. Apps distributed form other sources should be avoided. Android .APK | Apple .IPA 
+                Operating System Updates - always update. Apple is closed but Android is open source coding. 
+                Full Device Encryption - Laptops, smartphones, tablets, external drives/ flash drives. Prevents access of stored content. Cracked password may expose stored data but data cannot be read in encoded state.
+                Multifactor Authentication - Something you know PASSWORD/PIN. Something you have RFID/TOKEN, Something you are BIOMETRICS.
+                Authenticator Applicaitons - generate codes to source accounts. Uses 2FA, code from the app + password.
+                Firewalls - IP addresses are assigned to mobile devices susceptible to exploit via cellular or wifi. Inbound and outbound traffic monitoring by apps.
+                Policies and Procedures - protects the environment. Helps determine what is acceptable. Should be well written. Users must be trained in policies and procedures.
+
+                BYOD vs Corporate Owned
+                    Bring Your Own Device - policy establishes guidelines of useing personal devices for work. MDM enforces BYOD compliance to protect company data.
+
+                    Corporate Owned - Acceptable use policy. MDM tracks devices for accountability. User must be aware of tracking policy.
+
+                    Profile security requirements - component of MDM. Allows uniform management processese, enforce settings for entire organization, enforce settings by organizational groups, enforce settings for encryption and password complexity.
