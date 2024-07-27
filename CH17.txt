@@ -167,7 +167,7 @@ Logical Security
 
         Phage - alters programs and databases, the only way to remove this virus is to reinstall the programs that are infected.
 
-        Polymorphic Virus - chang form to avoid detection. They attack your system, display a message on your computer and delete files on your system.
+        Polymorphic Virus - change form to avoid detection. They attack your system, display a message on your computer and delete files on your system.
 
         Retrovirus - bypasses the antivirus software installed on a computer. Anti-antivirus.
 

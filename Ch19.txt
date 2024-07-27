@@ -1,0 +1,62 @@
+Troubleshooting Operating Systems and Security
+    Trouble shooting Common Microsoft Windows Operating System Problems
+        Common Symptoms
+            
+            Sluggish Performance - GPU or RAM. Check Disk, Network, Graphics. Task manager, performance, details. Resource monitor.
+            
+            Boot Problems - BIOS looks for MBR, reads boot sector to load the boot manager. UEFI loads drivers before looking at MBR, GUID. Know what files are used for bootup.
+            
+            No OS Found - start from BIOS/UEFI. remove disc if one. modify boot sequence.  check boots drive data and power connections.
+           
+            OS instability - Storage, Video, Specialty Devices. UPDATE SOFTWARE. Use reliability monitor. Event viewer Application Log.
+            
+            BSOD - Loading device drivers/ invalid driver config. Boot in safe mode. Uninstall or rollback to the original. Launch Recovery Console.
+
+            Frequent shutdowns - faulty hardware. Event Viewer. Reinstall vendor-specific drivers.
+
+            Services not starting - conflicting resources. Event Viewer - ID 7000 series.
+
+            Low memory warning - limits processes, Running out of DIMM. Pagefile.sys.
+
+            USB warnings - 2.0 up2 500mA for 5 devices. 3.0 up2 900mA for 6 devices. Limit number of devices connected. 
+
+            Slow-loading profiles - Local: user and personal files on system. Roaming: on local servers, sent to system on login, writes back to server on logout. Delete temp internet files.
+
+            Time drift - Confirm the NTP server is reachable. TIme & Language > Date & Time, in Settings App. 'Synchronize with an Internet Time Server'.
+
+        Troubleshooting Methodology
+            1. Identify the Problem
+            2. Establish a Theory
+            3. Testing Solutions
+            4. Establish a plan of action
+            5. Verify Functionality
+            6. Document the work
+        Troubleshooting Security Issues
+        Best Practices for Malware Removal
+        Troubleshooting Mobile OS Issues
+        Troubleshooting Mobile Security Issues
+
+    
+    Common Troubleshooting Steps
+        Rebooting
+            Terminates 'stuck' process suitably. Resumes at the point of stoppage upon restart. Verifies functionality of affected process (STEP 6).
+        Restarting Services
+            to effect specific changes. restart manually or automatically. options are restart computer or run aprogram.
+        Fixing Application Issues
+            crashing or erratic operation. critical files are affected by another application. Repair first, then un/reinstall.
+        Application Requirements and Resources
+            vendors specificaiton. Memory, storage, and GPU speed may specify SSD hard drive. may need hardware upgrade.
+        System File Checks
+            scans and replaces critical system files. CMD 'sfc.exe'. Windows Recovery Enviro - used when the OS does not boot up.
+        Repairing Windows
+            Corrects any Windows OS issue.. Repair installation. replaces all system files and apps. user installed apps and files remain intact unless decided not to.
+        Restoring Windows
+            using system restore utility. easier method to recover from major OS issues. select restore point. must have system protection enabled. Before software isntallations. Control Panel access and settings app. Windows must be able to boot.
+        Reimagining/Reloading the OS
+            Common network administrative practice. System image recovery. Reset this PC, Get started, remove everything. Factory recovery partition. LAST RESORT.
+        Microsoft Updates
+            Hardens software against exploits. Auto on W11. Large-scale: corporate patch-management solution. WSUS. SOHO: one-off update installation.
+        Rolling Back Device drivers
+            Issues caused by faulty driver. Performed in Device Manager, requires a system reboot.
+        Rebuilding Windows Profiles
+            remediation for local user profile related issues. requires the affected profile to be deleted. Admin privileges. backup the local users profile. Users profile will be deleted but must not be moved. Lastly, user must sign in to create anew profile. Roaming profiles provide logon flexibility to selected users. SLIDE 87
