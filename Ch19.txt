@@ -59,4 +59,80 @@ Troubleshooting Operating Systems and Security
         Rolling Back Device drivers
             Issues caused by faulty driver. Performed in Device Manager, requires a system reboot.
         Rebuilding Windows Profiles
-            remediation for local user profile related issues. requires the affected profile to be deleted. Admin privileges. backup the local users profile. Users profile will be deleted but must not be moved. Lastly, user must sign in to create anew profile. Roaming profiles provide logon flexibility to selected users. SLIDE 87
+            remediation for local user profile related issues. requires the affected profile to be deleted. Admin privileges. backup the local users profile. Users profile will be deleted but must not be moved. Lastly, user must sign in to create anew profile. Roaming profiles provide logon flexibility to selected users. Logging in loads their same profile from a server that stores users roaming profile. 
+    Troubleshooting Sedurity Issues
+        Learn computer infection symptoms. Wuarantine infected system immediately. use proactive measures, Protection like antivirus/malware, System hardening like software patches, Prevention like threat awareness, user education.
+
+            Common Symptoms
+                Network Connectivity Issues - users unable to log i nto network. Cause: NIC malfunction, improperly installed network software.
+                False Alerts and Hoaxes - recent email alerts of major infection issues. Computer Emergency Response Team.
+                Desktop Alerts - malware creates notification and dialog boxes.
+                OS Notifications - browser push notifications. Can cause ads.
+                Rogue antivirus - spoof of windows message on notification center, dupes user to follow prompts.
+                Renamed System Files/ Disappeareing Files - affects computers normal operation.
+                Permission Changes/ Access Deneied - effect of malware. Rootkit: malware gains elevated privilege access, OS controlled by threat agent. Ransomware: alters file access permissions. preventw copying or moving to a safe location. UAC User Account Control - reduces occurrence of unauthorized changes. Trusted Installer - controls tasks associated with the windows OS (in/uninstalling and updating windows 10), system permissions have been downgraded, use SFC to maintain stability.
+                OS Update Failures - probably connectivity. Organization network update server WSUS. Windows Update Troubleshooter, provides error code of probably cause.
+
+   Browser Related Systems
+        Pop-Ups - untrusted site prompts on top of site, pop-unders opens in the background. Use browsers pop-up blocer. Enabled by default to block all occurrences.
+        Certificate Issues - Improper time and date setting on hosts. Untrusted or invalid ssl certificates, browser will display a warning. Prevent: confirm hosts time and date are correctly set. Check the certificates expiration date. Verify the sites domain name. self signed certificates are invalid.
+        Browser Redirection - malicious change of datas intended location. small scale effects hosts file is modified by a threat agent. Large scale impact record entries are changed on DNS servers AKA DNS poisoning. Pharming is a form of redirection. its a malicious web browsing technique - hoax websire is designed to appear legit. Affiliate redierection - associates a link connection to a threat agent. Links apprear resulting from web searches, malware is triggered when you click a link and proceed with online transaction. Harden operating systems with pathces. Browser security features are on. Instal antivirus and antimalware.
+
+    Best Practices for Malware Removal
+        1. Identify and research malware symptoms - observe computers behavior/ malfunction
+        2. Quarantine - Prevent virus replication or spread of malware
+        3. Disable System restore - deletes all restore points
+        4. Remediate Infected Systems - actual removal of virus or malware infection. update antivirus/ antimalware, Windows Recovery Enviro.
+        5. Schedule scans and run Updates - periodic scans through task scheduler. Windows Defender Security scans while the OS is idle, updates are checked daily.
+        6. Enable sysem restore and create a restore point - turn the System Protection back on. manually create a restor point. Identify snapshot with appropriate description.
+        7. Educate the end user - training, annual requirement. Employees review current updated policies.
+
+    Malware Removal Steps IQ DR.SEE
+        1. Identify and research malware symptoms
+        2. Quarantine infected systems
+        3. Disable System Restore (In Windows)
+        4. Remediate teh infected systems
+        5. Schedule scans and run Updates
+        6. Enable System Restore, create restore point
+        7. Educate the end-user 
+
+    Troubleshooting Mobile OS Issues
+        Application Problems
+            Launch Issues
+                app is not yet fully loaded forgraound process. Corruption in apps cache after upgrades. Clearing cahe. Uninstall install the app.
+            Crashes
+                closes unexpectedly. needs to force quit the app.
+            Update Failure
+                cause of most issues. upgrade your apps. manually upgrate the app if needed.
+        Performance Issues
+            Slow Performance
+                limited onboard RAM cabacity/ High CPU usage. Close apps to clear memory. restart iphone to clear memory. CLose apps, open separately.
+            Frozen System
+                phone froze. soft reset the device. perform hard reset if needed.
+            Random reboots
+                hardware or OS problem. close all apps and open each app separately. clear cache, disable auto-run. factory reset if all attampts fail.
+        OS Update Failures
+            reboot clears user-launched apps from memory. update compatibility. Storage availability. internet connection. Over The Air Update - last ditch effort to update a mobile OS.
+        Extremely Short Battery Life
+            too many apps running. location/ bluetooth. Update firmware, enable screen dimming feature. exposure to sunlight (avoid). remove case.
+        Connectivity Issues
+            cellular provider issue, weak signal from WAP, interference (2.4gHz). Auto reconnection issue. wireless radio is off. Airplane mode is on. Bluetooth is disabled, off or not paired. NFC is off or too far. remove case. Airdrop bluetooth allows connectivity and wifi makes it faster. make sure its within range, contacts with eachother. Should only be temporary.
+        Autorotate Issues
+            Autorotate is off. close app or reboot if needed. bad accelerometer sensor.
+
+    Troubleshooting Mobile Security Issues
+        Security Concerns
+            APK Source - used in developing mobile apps. deemed trusted for Google Play. No untrusted sites.
+            Developer mode - for side-loading apps for testing. Android only. Source of security concerns.
+            Root Access/ Jailbreak - RA enables creator access to android OSs to make major changes to the device. Jailbreak is for iOS. Neither can be reverted to OEM.
+            Malicious Applications - deployed with malicious code and are identified by their permissions.
+                Bootleg Applications - premium apps in the form of an APK with malicious code.
+                Applications Spoofing - malicous version of a legitimate app. read reviews.
+
+        Common Symptoms
+            High Resource Utilization - sign of constant activity on device. enable firewall for outgoing traffic.
+            Limited Internet Connectivity - caused by devices radio firmware. security issue. use firewall and antimalware. DNS is compromised. hard factory reset.
+            High Number of Ads - symptom of adware (pop-ups). apps from untrusted websites. factory reset the device, all apps. hard reset if nothing else.
+            Fake Security Warnings - look real. no related symptoms. infected devices must be favtory reset.
+            Unexpected Application Behavior - usually from an app. read reviews before installing apps. scan for malware.
+            Leaked Personal Files/Data - update antivirus and antimalware. firewall, third party security updates. MDM. Encryption.
