@@ -1,0 +1,46 @@
+Scripting and Remote Access
+    Programming: uses low level programming level. requires compiling before being executed. has direct access to hardware like CPU.
+    Scripting: uses high level programming language. does not require compiling before being executed. Indirect CPU access. do not create functions, only call on.
+    Interpreters: scripts are interpreted/ translated from a shell command line or external interpreter. Reads each line of script. Executes as instruction.
+    Applications: are written to perform funcitons.
+    Variable: symbolic word for combination of letters, holds a value. Integer. Text. Boolean. True Values and arrays. cannot be a reserved word.
+    Environment Variable: holds value in scripts for system or user. can be over written individually. System > USer > Program.
+    
+
+    Scripting Languages
+        Windows Batch - runs command lines one after the other, may contain logic, may contain loops and if statments.
+        PowerShell - allows automated management of Windows (Microsoft Azure, Office 365, Cloud services). Fully extensible. Integrated Scripting enviro.
+        Visual Baist Studio - based on Microsol Visual Basic. Only runs on windows. for editing scripts.
+        Shell Script - used to boot linuz systems. Interpretatioin is performed by the shell.
+
+    Simplifying IT Taks
+        Basic Autonomation
+            creating users, adding users to groups. Personal tasks, tasks for others. Simplifies command-line executed tasks.
+        Restarting Machines
+            one-time task using shutdown command.
+        Remapping Network Drives
+            Mounts a network resource to a drive letter.
+        Installing Applications
+            Recall script overview, Prerequisites for installation of applicaitons.
+        Automated Backups
+            Ensures thereliablity of backup software. Common backup practices: SQL. Using scripts for backing up SQL databases.
+        Info/Data Collection
+            From groups comprised of many computers. PowerShell. Get-Service.
+        Initiating Updates
+            Immediate installation of a security patch. Windows Update, WSUS, MECM, 3P. Scripted Windows Update - calls on the wuauclt.exe utility. To initiate patching from available updates. PowerShell. PSWindowsUpdate fully autonomates patching. Get-WindowsUpdate.
+
+    Script Considerations
+        Introducing Security Issues
+            Inadvertent Incident. Unintentional Malware Infection. Trusted sources only.
+        Changing System Settings
+            Carelessness is root cause. test the script with sandboxing or vm.
+        System Crashes
+            overuse of resources. memory capacity is overused.
+
+    Remote Access overview
+        Create remote connections
+            computers on the local network
+            corporate intratnet
+            branch offices
+        
+        Perform computer tasks at distant locations
