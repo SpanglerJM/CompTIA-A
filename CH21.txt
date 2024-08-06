@@ -1,0 +1,6 @@
+The ASSET ID should be used to uniquely identify each piece of hardware tracked in an asset management database. An asset management database can be configured to store as much or as little information as is deemed neccessary.
+
+If you see a message such as 'One or more services failed to start" during the Windows load sequence, check the Event Viewer and/ or the Services snap-in to identify which service has failed.
+
+The only way to fully ensure that a backup will work when needed is to restore the files from the backups. To do that, it is best to restore them to a test server since this will not affect your production environment.
+
