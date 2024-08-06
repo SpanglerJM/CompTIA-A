@@ -1,0 +1,17 @@
+SMTP - 25
+SNMP - 161
+HTTPS - 443
+RDP - 3389
+
+To change the APIPA Address that is assigned when a computer  cannot communicate wiht a DHCP Server? ALTERNATE CONFIGURATION
+
+Time Machine is a backup method for Mac OS.
+
+CAT - is a Linux command that is used to print the full contents of a file to the screen at once. Short for conCATenate.
+
+The CD File System is a legacy file system used for CD optical disc media. CDFS
+
+Spear Phishing is the fraudulent practice of sending emails from a seemingly known or trusted sender to introduce targeted individuals to reveal confidential information.
+
+The hosts file is a local plain text file that maps servers or hostnames to IP addresses.
+

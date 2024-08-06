@@ -1,0 +1,26 @@
+Spoofing is often used to inject the attacker into the conversation path between the two parties.
+
+One file system for each partition
+
+Class A IP is from 0 to 10.255
+Class B IP is 172.16 to 172.31
+Class C IP is 192.128.0 to 192.168.255
+
+WEP - WIred Equivalent Privacy uses a 40-bit encyption key with an RC4 encryption.
+
+Port 22 must be opened by the Firewall.
+
+Synthetic backup is the process of generating a file from a complete copy of a file created at some point in the past and one or more incremental copoies crated at later times.
+
+If print que is stuck, cancel all documents and print them again.
+
+A firewall is an integral part of creating ascreened subnet.
+
+The MMC, Microsoft Management Console, is a utility that uses snap-ins for various Windows tools such as disk management, computer management, performance monitor, and others to perform operations on a local or networked computer.
+
+Minimum space to install Windows 10? 32GB
+
+FAT32 can support maximum volume sizes of 2TB and maximum file sizes of up to 4GB.
+
+Universal Plug and Play is a protocol framework allowing network devices to autoconfigure services like game consoles from a firewall.
+

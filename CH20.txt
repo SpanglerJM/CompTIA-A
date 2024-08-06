@@ -44,3 +44,34 @@ Scripting and Remote Access
             branch offices
         
         Perform computer tasks at distant locations
+            Configuration
+            Servicing
+            Troubleshooting
+
+    Remote Desktop Protocol
+        Exclusive with Windows and Server OS'sandboxing
+        Resources transported through connections
+            audio
+            printers
+            the clipboard
+            local disks
+            Video Capture devices
+            various plug and play devices
+        Assocoated Applications
+            Built-in on Microsoft operating systems
+            Remote desktop connection client (mstsc.exe)
+            Terminal services
+                Centralized gateway
+                    Manges each RDP client desktop session connection.
+            Microsoft Remote App
+                delivers applications to end users.
+            RDP connectivity components
+                TCP port 3389
+                TLS - 128-bit encryption by default
+            Microsoft specifications
+
+    Windows 10 Quick Assist Process
+        1. Launch Quick assist
+        2. Tech signs into microsoft account
+        3. Session begins when user enters the number
+        4. Tech selects view only for full control.
